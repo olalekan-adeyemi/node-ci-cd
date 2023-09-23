@@ -31,8 +31,8 @@ jobs:
           npm i
           npm run build
           cd ..
-          pm2 stop 0
-          pm2 start 0
+          pm2 stop ci-cd-node-app
+          pm2 start ci-cd-node-app
           pm2 save
           sudo service nginx restart
 
