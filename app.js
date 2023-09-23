@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, '/frontend/dist')))
 
 app.get('/api', (req,res) => {
-    res.send('Adeyemi Lawrence')
+    res.send('Adeyemi Olalekan Lawrence')
 })
 
 app.listen(PORT, ()=>{
