@@ -2,7 +2,9 @@ const morgan = require('morgan')
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 9000
+const path = require('path')
 
+app.use(express.static(path.join(__dirname, '/frontend/build')))
 
 //MORGAN
 app.use(morgan('dev'))
